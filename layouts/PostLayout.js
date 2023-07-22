@@ -10,7 +10,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, date, title, tags, readingTime } = frontMatter
+  const { slug, date, title, tags, readingTime, lastmod } = frontMatter
 
   return (
     <SectionContainer>
@@ -22,21 +22,65 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <ScrollTopAndComment />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
+          <header className="pt-4 xl:pb-6">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
+                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400"></dd>
                 </div>
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>
-                <p>{readingTime.text}</p>
+              </div>
+              <div className="mt-4 flex w-full justify-center gap-4 text-base font-semibold text-[#5B5B5B]">
+                {date < lastmod ? (
+                  <time className="flex items-center" dateTime={date}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      width="14"
+                      height="14"
+                      className="mr-1"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                      ></path>
+                    </svg>
+                    {`최근 업데이트: ${new Date(lastmod).toLocaleDateString(
+                      siteMetadata.locale,
+                      postDateTemplate
+                    )}`}
+                  </time>
+                ) : (
+                  <time dateTime={date}>
+                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                  </time>
+                )}
+                <p className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    width="14"
+                    height="14"
+                    className="mr-1"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  {`${readingTime.text.split(' ')[0]}분`}
+                </p>
               </div>
             </div>
           </header>
