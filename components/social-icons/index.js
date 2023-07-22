@@ -13,7 +13,6 @@ const components = {
   facebook: Facebook,
   youtube: Youtube,
   linkedin: Linkedin,
-  twitter: Twitter,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
