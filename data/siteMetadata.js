@@ -5,14 +5,14 @@ const siteMetadata = {
   description: 'Tech blog',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://nextjs-blog-haseungdev.vercel.app/',
+  siteRepo: 'https://github.com/HA-SEUNG-JEONG/nextjs-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'gktmd653@gmail.com',
-  github: 'https://github.com',
-  linkedin: 'https://www.linkedin.com',
+  github: 'https://github.com/HA-SEUNG-JEONG',
+  linkedin: 'https://www.linkedin.com/in/haseung-jeong-50b831229/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
