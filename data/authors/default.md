@@ -1,6 +1,6 @@
 ---
 name: 정하승
-avatar: /static/images/avatar.png
+avatar: /static/images/profile.jpg
 occupation: Professor of Atmospheric Science
 company: Stanford University
 email: address@yoursite.com
