@@ -1,7 +1,7 @@
 ---
-title: Using target="_blank" without rel="noreferrer" (which implies rel="noopener")
+title: noreferrer와 noopener
 date: '2023-04-17'
-lastmod: '2023-04-17'
+lastmod: '2023-07-22'
 tags: ['글또', 'web']
 draft: false
 summary: ''
