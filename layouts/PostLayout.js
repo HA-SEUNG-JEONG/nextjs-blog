@@ -7,10 +7,16 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+// const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, date, title, tags, readingTime, lastmod } = frontMatter
+
+  const [year, month, day] = new Date(date).toLocaleDateString(siteMetadata).split('.')
+
+  const [modifiedYear, modifiedMonth, modifiedDay] = new Date(lastmod)
+    .toLocaleDateString(siteMetadata)
+    .split('.')
 
   return (
     <SectionContainer>
@@ -52,15 +58,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
                       ></path>
                     </svg>
-                    {`최근 업데이트: ${new Date(lastmod).toLocaleDateString(
-                      siteMetadata.locale,
-                      postDateTemplate
-                    )}`}
+                    {`최근 업데이트: ${modifiedYear}년 ${modifiedMonth}월 ${modifiedDay}일`}
                   </time>
                 ) : (
-                  <time dateTime={date}>
-                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                  </time>
+                  <time dateTime={date}>{`${year}년 ${month}월 ${day}일`}</time>
                 )}
                 <p className="flex items-center">
                   <svg
