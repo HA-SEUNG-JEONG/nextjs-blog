@@ -4,7 +4,7 @@ date: '2023-06-22'
 lastmod: '2023-06-22'
 tags: ['react-hook-form', 'zod', 'typescript']
 draft: false
-summary: ''
+summary: 'react-hook-form과 zod를 쓰면서 겪은 경험에 대해 적어보았습니다.'
 ---
 
 ### zod를 쓴 이유

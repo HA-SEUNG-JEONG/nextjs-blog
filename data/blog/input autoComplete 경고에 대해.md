@@ -4,7 +4,7 @@ date: '2022-11-14'
 lastmod: '2022-11-14'
 tags: ['Web']
 draft: false
-summary: ''
+summary: 'input을 다루면서 겪은 경험에 대해 적어보았습니다.'
 ---
 
 메인 프로젝트에서 react-hook-form을 이용해 로그인 컴포넌트를 만들던 중에

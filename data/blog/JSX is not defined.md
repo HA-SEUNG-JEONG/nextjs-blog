@@ -4,7 +4,7 @@ date: '2022-12-24'
 lastmod: '2022-12-24'
 tags: ['swap', 'typescript']
 draft: false
-summary: ''
+summary: '타입스크립트로 마이그레이션하는 과정에서 겪은 경험에 대해 적어보았습니다.'
 ---
 
 ![JSX](/static/images/JSX.png)

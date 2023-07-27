@@ -4,7 +4,7 @@ date: '2023-01-04'
 lastmod: '2023-01-04'
 tags: ['swap']
 draft: false
-summary: ''
+summary: '파일 업로드 input을 아이콘으로 대체하면서 얻은 경험에 대해 적어보았습니다.'
 ---
 
 ![swap](/static/images/swap.png)

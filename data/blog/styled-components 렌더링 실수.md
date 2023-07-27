@@ -4,7 +4,7 @@ date: '2023-01-13'
 lastmod: '2023-01-13'
 tags: ['styled-components']
 draft: false
-summary: ''
+summary: 'styled-components를 쓰면서 겪었던 경험에 대해 적어보았습니다.'
 ---
 
 ![render](/static/images/render.png)

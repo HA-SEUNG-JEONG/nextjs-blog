@@ -4,7 +4,7 @@ date: '2023-02-11'
 lastmod: '2023-02-11'
 tags: ['react-hooks', 'next']
 draft: false
-summary: ''
+summary: '커스텀 훅을 만들어서 배포한 이후에 겪은 경험에 대해 적어보았습니다.'
 ---
 
 ```tsx

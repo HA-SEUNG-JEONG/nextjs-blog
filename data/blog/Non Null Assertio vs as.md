@@ -4,7 +4,7 @@ date: '2022-12-18'
 lastmod: '2022-12-18'
 tags: ['typescript']
 draft: false
-summary: ''
+summary: '타입스크립트의 Non Null Assertion과 타입 단언에 대해 알아보았습니다.'
 ---
 
 코드스테이츠 메인 프로젝트를 진행하면서, Editor에 이미지를 넣는 기능을 구현을 담당했었다. 이 기능을 구현하면서 타입을 지정하는 과정에서 `Non Null Assertion`과 `as`로 타입 단언을 하는 것에 대한 차이가 궁금해졌다.

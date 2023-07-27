@@ -4,7 +4,7 @@ date: '2023-06-17'
 lastmod: '2023-06-17'
 tags: ['study', 'CS']
 draft: false
-summary: ''
+summary: '2달동안 진행한 CS스터디에 대한 회고입니다.'
 ---
 
 ### CS스터디를 시작한 이유

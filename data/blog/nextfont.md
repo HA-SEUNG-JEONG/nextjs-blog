@@ -4,7 +4,7 @@ date: '2023-01-31'
 lastmod: '2023-01-31'
 tags: ['next']
 draft: false
-summary: ''
+summary: 'next/font에 대해 간략하게 알아보았습니다.'
 ---
 
 포트폴리오를 컨펌받다가 폰트를 통일하면 어떻겠냐는 피드백을 받았다.
