@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Next.js Starter Blog',
   author: 'haseung',
-  headerTitle: "하승's blog",
+  headerTitle: 'haseung blog',
   description: 'Tech blog',
   language: 'en-us',
   theme: 'system', // system, dark or light
