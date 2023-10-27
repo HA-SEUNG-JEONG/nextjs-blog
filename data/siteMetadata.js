@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'haseung',
   headerTitle: 'haseung blog',
   description: 'Tech blog',
-  language: 'en-us',
+  language: 'ko-KR',
   theme: 'system', // system, dark or light
   siteUrl: 'https://nextjs-blog-haseungdev.vercel.app/',
   siteRepo: 'https://github.com/HA-SEUNG-JEONG/nextjs-blog',
@@ -13,7 +13,7 @@ const siteMetadata = {
   email: 'gktmd653@gmail.com',
   github: 'https://github.com/HA-SEUNG-JEONG',
   linkedin: 'https://www.linkedin.com/in/haseung-jeong-50b831229/',
-  locale: 'en-US',
+  locale: 'ko-KR',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -38,8 +38,8 @@ const siteMetadata = {
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
-      repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
-      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
+      repo: 'HA-SEUNG-JEONG/nextjs-blog',
+      repositoryId: 'R_kgDOJ-LwFw',
       category: 'Comment',
       categoryId: 'DIC_kwDOJ-LwF84Cafmb',
       mapping: 'pathname', // supported options: pathname, url, title
