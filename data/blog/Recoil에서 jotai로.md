@@ -122,4 +122,6 @@ function atom<T>({
 
 다음 프로젝트에서 상태관리 라이브러리를 사용할 일이 있으면 우선 Recoil은 배제하고 시작할 거 같다.
 
-https://www.daleseo.com/zod-why-validation/
+### References
+
+https://jotai.org/docs/basics/comparison
