@@ -1,7 +1,7 @@
 ---
 title: Recoil에서 jotai로
 date: '2023-11-21'
-lastmod: '2023-11-21'
+lastmod: '2023-11-22'
 tags: ['react', 'jotai']
 draft: false
 summary: 'recoil에서 jotai로 마이그레이션해보았습니다..'
@@ -32,7 +32,7 @@ summary: 'recoil에서 jotai로 마이그레이션해보았습니다..'
 
 npm trend에서 가장 이름이 날린(?) 라이브러리를 비교해봤다.
 
-나는 기준을 Star 수, 최근 업데이트로 잡았는데, 그 중에서 jotai와 zustand를 고민했고 그나마 Star 수가 더 많은 jotai를 선택했다.(심지어 Redux보다 많다.)
+나는 선택 기준을 **Star 수, 최근 업데이트**로 잡았는데, 그 중에서 jotai와 zustand를 고민했고 그나마 Star 수가 더 많은 jotai를 선택했다.
 
 ![render](/static/images/jotai.png)
 
@@ -112,7 +112,7 @@ function atom<T>({
 
 ```
 
-하지만 jotai를 사용할 때는 atom에 들어가는 객체의 default 값만 넣으면 되서 개인적으로는 편리했다.
+반면에 jotai를 사용할 때는 atom에 들어가는 객체의 default 값만 넣으면 돼서 개인적으로는 편리했다.
 
 또한, Recoil과 달리 Provider를 굳이 쓸 필요가 없다. jotai에도 존재하기는 하지만 Provider를 안 쓸 경우 기본 설정으로 쓸 수 있다고 한다.
 
