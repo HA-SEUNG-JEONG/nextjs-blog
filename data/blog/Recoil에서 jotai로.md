@@ -44,6 +44,50 @@ npm trend에서 가장 이름이 날린(?) 라이브러리를 비교해봤다.
 
 그래서 주저없이 jotai를 쓰기로 했다.
 
+참고로 zustand와 jotai의 문법 비교를 해보자면,
+
+#### zustand
+
+```jsx
+import { create } from 'zustand'
+
+const useStore = create((set) => ({
+  count: 1,
+  inc: () => set((state) => ({ count: state.count + 1 })),
+}))
+
+function Counter() {
+  const { count, inc } = useStore()
+  return (
+    <div>
+      <span>{count}</span>
+      <button onClick={inc}>one up</button>
+    </div>
+  )
+}
+```
+
+#### jotai
+
+```jsx
+mport { atom, useAtom } from 'jotai'
+
+// Create your atoms and derivatives
+const textAtom = atom('hello')
+const uppercaseAtom = atom(
+  (get) => get(textAtom).toUpperCase()
+)
+
+// Use them anywhere in your app
+const Input = () => {
+  const [text, setText] = useAtom(textAtom)
+  const handleChange = (e) => setText(e.target.value)
+  return (
+    <input value={text} onChange={handleChange} />
+  )
+}
+```
+
 ### 사용해보기
 
 jotai도 recoil과 비슷하게 Atom 개념을 갖고 있다.
@@ -131,3 +175,5 @@ function atom<T>({
 ### References
 
 https://jotai.org/docs/basics/comparison
+https://jotai.org/
+https://zustand-demo.pmnd.rs/
