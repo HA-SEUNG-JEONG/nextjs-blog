@@ -5,6 +5,7 @@ lastmod: '2023-11-22'
 tags: ['react', 'jotai']
 draft: false
 summary: 'recoil에서 jotai로 마이그레이션해보았습니다..'
+images: ['/static/images/day2.png']
 ---
 
 ### Recoil을 쓰면서 겪었던 이슈
