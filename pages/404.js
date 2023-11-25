@@ -7,7 +7,7 @@ export default function FourZeroFour() {
     <>
       <PageSEO title={`Page Not Found - ${siteMetadata.title}`} />
       <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
-        <div className="space-x-2 pt-6 pb-8 md:space-y-5">
+        <div className="space-x-2 pb-8 pt-6 md:space-y-5">
           <div className="max-w-md">
             <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
               페이지를 찾을 수 없습니다.
