@@ -175,5 +175,7 @@ function atom<T>({
 ### References
 
 https://jotai.org/docs/basics/comparison
+
 https://jotai.org/
+
 https://zustand-demo.pmnd.rs/
