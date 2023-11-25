@@ -15,7 +15,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
-
+  console.log('displayPosts', displayPosts)
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -50,6 +50,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
+            console.log(frontMatter)
             const { slug, date, title, summary, tags } = frontMatter
             return (
               <li key={slug} className="py-4">
